@@ -79,7 +79,7 @@ AmpSat0 = Q0(NomV); %Amplifier specified to not exceed motor nominal voltage, V
 % -------------------------
 
 Elec0n = [1];
-Elec0d = [Q0(TermL)/1000 Q0(TermR)]; %Electrical side is inductance (H)*s + Resistance (ohms)
+Elec0d = [8.9/1000 2.85]; %Electrical TF is 1/sL + R. L=8.9mH, R=2.85 ohm.
 
 % Torque Const & Back EMF
 % -----------------------
